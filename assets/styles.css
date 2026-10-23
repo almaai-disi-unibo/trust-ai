@@ -206,6 +206,21 @@ p + p { margin-top: 1em; }
 .founder__body { display: flex; flex-direction: column; gap: .8rem; }
 .founder__inst { font-size: var(--fs-micro); text-transform: uppercase; letter-spacing: .14em; color: var(--accent-ink); }
 
+/* Contact block (founders page) */
+.contact { margin-top: 2.5rem; }
+.contact > summary { list-style: none; }
+.contact > summary::-webkit-details-marker { display: none; }
+.contact > summary::after { content: " ↓"; }
+.contact[open] > summary { background: var(--ink); color: var(--base); }
+.contact[open] > summary::after { content: " ↑"; }
+.contact__panel { margin-top: 1.8rem; padding: clamp(1.2rem, 2vw, 1.8rem); max-width: 640px; background: var(--base); border: var(--border); box-shadow: var(--shadow); }
+.contact__details { display: grid; gap: .6rem; margin-top: 1.8rem; font-size: var(--fs-data); }
+.contact__details > div { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.contact__details dt { min-width: 5.5em; font-size: var(--fs-micro); text-transform: uppercase; letter-spacing: .14em; color: var(--muted); }
+.contact__details dd { display: flex; align-items: center; gap: .8rem; }
+.contact__copy { padding: .25em .7em; font: inherit; font-size: var(--fs-micro); text-transform: uppercase; letter-spacing: .12em; color: var(--ink); background: var(--base); border: 2px solid var(--ink); cursor: pointer; }
+.contact__copy:hover, .contact__copy.copied { background: var(--ink); color: var(--base); }
+
 /* Join / people */
 .filter-row { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 2.5rem; }
 .filter-row .tag { cursor: pointer; font-family: inherit; }

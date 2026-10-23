@@ -36,3 +36,19 @@ document.querySelectorAll('[data-filter]').forEach((button) => {
     });
   });
 });
+
+/* Copy buttons (contact details) */
+document.querySelectorAll('[data-copy]').forEach((button) => {
+  button.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(button.dataset.copy);
+      button.textContent = 'Copied';
+    } catch {
+      // Clipboard blocked (e.g. plain http): select the text so the user can copy it by hand
+      getSelection().selectAllChildren(button.previousElementSibling);
+      button.textContent = 'Press Ctrl+C';
+    }
+    button.classList.add('copied');
+    setTimeout(() => { button.textContent = 'Copy'; button.classList.remove('copied'); }, 1800);
+  });
+});
