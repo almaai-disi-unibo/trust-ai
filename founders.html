@@ -1,75 +1,130 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Founders of TRUST-AI."><title>Founders | TRUST-AI</title><link rel="stylesheet" href="assets/styles.css"></head>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Founders | TRUST-AI</title>
+<meta name="description" content="Founders of TRUST-AI.">
+<link rel="icon" type="image/png" href="assets/TRUST-AI-logo-small.png?v=4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
 <body>
-    <header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="index.html">
-      <span class="brand-mark"></span>
-    </a>
 
-    <button class="menu-button" aria-label="Open navigation">
-      ☰
-    </button>
-
-    <nav class="nav-links">
+<header class="header">
+  <div class="header__inner">
+    <div class="header__left">
+      <a class="header__logo" href="index.html"><img class="header__logo-mark" src="assets/TRUST-AI-logo-small.png?v=4" alt="">TRUST-AI</a>
+      <span class="header__sep"></span>
+      <span class="header__product">Joint Initiative for Trusted AI</span>
+    </div>
+    <nav class="header__nav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a class="active" href="founders.html">Founders</a>
-
-      <!--
-      <a href="people.html">People</a>
-      -->
-
-      <div class="nav-item" data-dropdown>
-        <button type="button">Events⌄</button>
-
-        <div class="dropdown">
-          <a href="events.html">All events</a>
-          <a href="events.html#lunch-events">Lunch events</a>
-          <a href="events.html#open-debates">Open debates</a>
-          <a href="events.html#schools">Schools</a>
-        </div>
-      </div>
-
-      <!--
-      <a href="join.html">Join</a>
-      -->
+      <a href="founders.html" class="active">Founders</a>
+      <div class="header__drop"><a href="events.html">Events</a><div class="header__menu"><a href="events.html">All events</a><a href="events.html#lunch-events">Lunch events</a><a href="events.html#open-debates">Open debates</a><a href="events.html#schools">Schools</a></div></div>
     </nav>
+    <a class="header__cta" href="events/trust-ai-launch-2026.html"><span class="header__dot"></span><span>Launch · 30 Oct 2026</span></a>
+    <button class="header__burger" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header>
-<main><section class="page-hero"><div class="container"><p class="eyebrow">Founding Partners</p><h2>Five institutions, complementary expertise, one shared initiative.</h2><p></p></div></section>
+
+<main>
+<section class="hero hero--page">
+  <div class="hero__grid" aria-hidden="true"></div>
+  <div class="hero__label reveal">Founding partners</div>
+  <h1 class="hero__title">Five institutions, one shared initiative.</h1>
+  <p class="hero__desc reveal">Complementary expertise across engineering, governance, inclusion and regulation.</p>
+  <details class="contact reveal">
+    <summary class="btn btn--primary">Contact us</summary>
+    <div class="contact__panel">
+    <div class="btn-row">
+      <a class="btn btn--ghost" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=roberta.calegari@unibo.it&amp;su=Trust%20AI%20Initiative" target="_blank" rel="noopener">Write with Gmail</a>
+      <a class="btn btn--ghost" href="https://outlook.office.com/mail/deeplink/compose?to=roberta.calegari@unibo.it&amp;subject=Trust%20AI%20Initiative" target="_blank" rel="noopener">Write with Outlook</a>
+    </div>
+    <dl class="contact__details">
+      <div><dt>To</dt><dd><span>roberta.calegari@unibo.it</span><button class="contact__copy" type="button" data-copy="roberta.calegari@unibo.it">Copy</button></dd></div>
+      <div><dt>Subject</dt><dd><span>Trust AI Initiative</span><button class="contact__copy" type="button" data-copy="Trust AI Initiative">Copy</button></dd></div>
+    </dl>
+    </div>
+  </details>
+</section>
+
 <section class="section">
-    <div class="container">
-        
-        <div class="grid founder-grid" style="margin-top:28px">
-            <article class="card founder-card">
-                <img
-            class="founder-photo"
-            src="assets/roberta.jpeg"
-            alt="Roberta Calegari">
-                <div><h3>Roberta Calegari</h3><p class="institution">Alma AI · University of Bologna</p><p>Roberta Calegari works on trustworthy AI engineering, algorithmic fairness, explainability and AI compliance. Her research focuses on translating responsible-AI principles into methods, tools and engineering practices.</p><div class="tag-list"><span class="tag">Trustworthy AI</span><span class="tag">Fairness</span><span class="tag">AI compliance</span></div></div></article><article class="card founder-card">
-                    <img
-            class="founder-photo"
-            src="assets/michela.jpeg"
-            alt="Michela Milano">
-                    <div><h3>Michela Milano</h3><p class="institution">FBK · Digital Society Center</p><p>Michela Milano contributes expertise in AI engineering practices and the operational implementation of responsible AI, including lifecycle management, development guidance and deployment-oriented methods.</p><div class="tag-list"><span class="tag">AI engineering</span><span class="tag">MLOps</span></div></div></article>
-        <article class="card founder-card">
-            <img
-            class="founder-photo"
-            src="assets/virginia.jpeg"
-            alt="Virginia Dignum">
-            <div><h3>Virginia Dignum</h3><p class="institution">AI Policy Lab  · Umeå University</p><p>Virginia Dignum leads work on responsible AI governance and ethics, including accountability, human-centred approaches, democratic values and institutional capabilities for AI oversight.</p><div class="tag-list"><span class="tag">AI governance</span><span class="tag">AI Ethics</span><span class="tag">AI policy</span></div></div>
-        </article>
-        <article class="card founder-card">
-                <img
-            class="founder-photo"
-            src="assets/payal.jpeg"
-            alt="Payal Arora">
-                <div><h3>Payal Arora</h3><p class="institution">Inclusive AI Lab · Utrecht University</p><p>Payal Arora contributes research on inclusive and equitable AI, digital inclusion, human rights, intercultural perspectives and the societal effects of technology across diverse global communities.</p><div class="tag-list"><span class="tag">Inclusion</span><span class="tag">Digital society</span><span class="tag">Human rights</span></div></div></article>
-                <article class="card founder-card">
-                    <img
-            class="founder-photo"
-            src="assets/catherine.jpeg"
-            alt="Catherine Régis">
-                    <div><h3>Catherine Régis</h3><p class="institution">Scientific Representative · Centre de recherche en droit public</p><p>Catherine Régis contributes expertise in AI regulation, public policy, science diplomacy and health-AI governance, with a focus on compliance, risk governance and regulatory innovation.</p><div class="tag-list"><span class="tag">AI regulation</span><span class="tag">Public policy</span></div></div></article></div></div></section></main>
-<footer class="site-footer"><div class="container footer-grid"><div><strong>TRUST-AI</strong><p>Joint Initiative for Trusted AI: Governance, Engineering &amp; Societal Engagement</p></div></div></footer><script src="assets/site.js"></script></body></html>
+  <div class="container grid grid--5">
+    <article class="card founder reveal">
+      <img class="founder__photo" src="assets/roberta.jpeg" alt="Roberta Calegari">
+      <div class="founder__body">
+        <div class="card__number">F—01</div>
+        <h2 class="card__title">Roberta Calegari</h2>
+        <div class="founder__inst">Alma AI · University of Bologna</div>
+        <p class="card__text">Roberta Calegari works on trustworthy AI engineering, algorithmic fairness, explainability and AI compliance. Her research focuses on translating responsible-AI principles into methods, tools and engineering practices.</p>
+        <div class="tags"><span class="tag">Trustworthy AI</span><span class="tag">Fairness</span><span class="tag">AI compliance</span></div>
+      </div>
+    </article>
+    <article class="card founder reveal">
+      <img class="founder__photo" src="assets/michela.jpeg" alt="Michela Milano">
+      <div class="founder__body">
+        <div class="card__number">F—02</div>
+        <h2 class="card__title">Michela Milano</h2>
+        <div class="founder__inst">FBK · Digital Society Center</div>
+        <p class="card__text">Michela Milano contributes expertise in AI engineering practices and the operational implementation of responsible AI, including lifecycle management, development guidance and deployment-oriented methods.</p>
+        <div class="tags"><span class="tag">AI engineering</span><span class="tag">MLOps</span></div>
+      </div>
+    </article>
+    <article class="card founder reveal">
+      <img class="founder__photo" src="assets/virginia.jpeg" alt="Virginia Dignum">
+      <div class="founder__body">
+        <div class="card__number">F—03</div>
+        <h2 class="card__title">Virginia Dignum</h2>
+        <div class="founder__inst">AI Policy Lab · Umeå University</div>
+        <p class="card__text">Virginia Dignum leads work on responsible AI governance and ethics, including accountability, human-centred approaches, democratic values and institutional capabilities for AI oversight.</p>
+        <div class="tags"><span class="tag">AI governance</span><span class="tag">AI Ethics</span><span class="tag">AI policy</span></div>
+      </div>
+    </article>
+    <article class="card founder reveal">
+      <img class="founder__photo" src="assets/payal.jpeg" alt="Payal Arora">
+      <div class="founder__body">
+        <div class="card__number">F—04</div>
+        <h2 class="card__title">Payal Arora</h2>
+        <div class="founder__inst">Inclusive AI Lab · Utrecht University</div>
+        <p class="card__text">Payal Arora contributes research on inclusive and equitable AI, digital inclusion, human rights, intercultural perspectives and the societal effects of technology across diverse global communities.</p>
+        <div class="tags"><span class="tag">Inclusion</span><span class="tag">Digital society</span><span class="tag">Human rights</span></div>
+      </div>
+    </article>
+    <article class="card founder reveal">
+      <img class="founder__photo" src="assets/catherine.jpeg" alt="Catherine Régis">
+      <div class="founder__body">
+        <div class="card__number">F—05</div>
+        <h2 class="card__title">Catherine Régis</h2>
+        <div class="founder__inst">Scientific Representative · Centre de recherche en droit public</div>
+        <p class="card__text">Catherine Régis contributes expertise in AI regulation, public policy, science diplomacy and health-AI governance, with a focus on compliance, risk governance and regulatory innovation.</p>
+        <div class="tags"><span class="tag">AI regulation</span><span class="tag">Public policy</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <h2 class="footer__brand-name">TRUST-AI<span class="accent">.</span></h2>
+        <p class="footer__brand-desc">Joint Initiative for Trusted AI: Governance, Engineering &amp; Societal Engagement.</p>
+      </div>
+      <div class="footer__col"><div class="footer__col-title">Initiative</div><a href="index.html">Home</a><a href="about.html">About</a><a href="founders.html">Founders</a></div>
+      <div class="footer__col"><div class="footer__col-title">Events</div><a href="events.html">All events</a><a href="events.html#lunch-events">Lunch events</a><a href="events.html#open-debates">Open debates</a><a href="events.html#schools">Schools</a></div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">&copy; 2026 TRUST-AI</span>
+      <button class="footer__back-top">↑ Back to top</button>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

@@ -1,46 +1,102 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="About TRUST-AI."><title>About | TRUST-AI</title><link rel="stylesheet" href="assets/styles.css"></head>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About | TRUST-AI</title>
+<meta name="description" content="About TRUST-AI.">
+<link rel="icon" type="image/png" href="assets/TRUST-AI-logo-small.png?v=4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
 <body>
-    <header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="index.html">
-      <span class="brand-mark"></span>
-    </a>
 
-    <button class="menu-button" aria-label="Open navigation">
-      ☰
-    </button>
-
-    <nav class="nav-links">
+<header class="header">
+  <div class="header__inner">
+    <div class="header__left">
+      <a class="header__logo" href="index.html"><img class="header__logo-mark" src="assets/TRUST-AI-logo-small.png?v=4" alt="">TRUST-AI</a>
+      <span class="header__sep"></span>
+      <span class="header__product">Joint Initiative for Trusted AI</span>
+    </div>
+    <nav class="header__nav">
       <a href="index.html">Home</a>
-      <a class="active" href="about.html">About</a>
+      <a href="about.html" class="active">About</a>
       <a href="founders.html">Founders</a>
-
-      <!--
-      <a href="people.html">People</a>
-      -->
-
-      <div class="nav-item" data-dropdown>
-        <button type="button">Events⌄</button>
-
-        <div class="dropdown">
-          <a href="events.html">All events</a>
-          <a href="events.html#lunch-events">Lunch events</a>
-          <a href="events.html#open-debates">Open debates</a>
-          <a href="events.html#schools">Schools</a>
-        </div>
-      </div>
-
-      <!--
-      <a href="join.html">Join</a>
-      -->
+      <div class="header__drop"><a href="events.html">Events</a><div class="header__menu"><a href="events.html">All events</a><a href="events.html#lunch-events">Lunch events</a><a href="events.html#open-debates">Open debates</a><a href="events.html#schools">Schools</a></div></div>
     </nav>
+    <a class="header__cta" href="events/trust-ai-launch-2026.html"><span class="header__dot"></span><span>Launch · 30 Oct 2026</span></a>
+    <button class="header__burger" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header>
-<main><section class="page-hero"><div class="container"><p class="eyebrow">About the initiative</p>
-    <h2>Responsible AI, made practical through collective expertise.</h2>
-    <p>TRUST-AI is a distributed, interdisciplinary and collaborative research initiative. </p></div></section>
-<section class="section"><div class="container split"><div><p class="eyebrow">Vision</p><h3 class="section-subtitle">An international environment for responsible and sustainable AI.</h3><p>TRUST-AI supports research, innovation, education and policy for the responsible and sustainable development, deployment and governance of AI.</p></div><div><p class="eyebrow">Mission</p><h3 class="section-subtitle">Connecting complementary perspectives.</h3><p>We connect leading research groups across scientific, technical, regulatory, environmental and societal dimensions of AI, fostering foundational and applied research, education, innovation and policy initiatives with societal impact.</p></div></div></section>
-<section class="section tint"><div class="container"><div class="section-heading"><p class="eyebrow">Across the AI lifecycle</p><h2>One initiative, complementary capabilities.</h2><p>Our combined expertise supports AI from design to governance, regulation and societal impact.</p></div><div class="lifecycle"><div><b>Design &amp; development</b><span>Trustworthy AI engineering</span></div><div><b>Build &amp; deploy</b><span>AI engineering practices</span></div><div><b>Govern &amp; oversee</b><span>Responsible AI governance &amp; ethics</span></div><div><b>Impact &amp; inclusion</b><span>Inclusive AI &amp; society</span></div><div><b>Regulate &amp; assure</b><span>AI regulation, policy &amp; compliance</span></div></div></div></section>
-<section class="section"><div class="container"><div class="section-heading"><p class="eyebrow">Founding expertise</p><h2>What each partner brings.</h2></div><div style="overflow-x:auto"><table class="focus-table"><thead><tr><th>Institution</th><th>Core focus</th><th>Contribution</th></tr></thead><tbody><tr><td>University of Bologna</td><td>Trustworthy AI Engineering</td><td>Algorithms, explainability, verification and validation, human oversight, fairness, robustness and compliance by design.</td></tr><tr><td>Fondazione Bruno Kessler</td><td>AI Engineering Practices</td><td>Software engineering, lifecycle management, MLOps, testing frameworks and practical deployment guidance.</td></tr><tr><td>Umeå University</td><td>Responsible AI Governance &amp; Ethics</td><td>Governance frameworks, accountability, human-centred AI, democratic values and institutional capabilities.</td></tr><tr><td>Utrecht University</td><td>Inclusive AI &amp; Society</td><td>Digital inclusion, fairness, diversity, accessibility, human rights and participatory approaches.</td></tr><tr><td>Université de Montréal</td><td>AI Regulation, Policy &amp; Science Diplomacy</td><td>Legal and regulatory frameworks, compliance, risk governance, health AI governance and regulatory innovation.</td></tr></tbody></table></div></div></section></main>
-<footer class="site-footer"><div class="container footer-grid"><div><strong>TRUST-AI</strong><p>Joint Initiative for Trusted AI: Governance, Engineering &amp; Societal Engagement</p></div></div></footer><script src="assets/site.js"></script></body></html>
+
+<main>
+<section class="hero hero--page">
+  <div class="hero__grid" aria-hidden="true"></div>
+  <div class="hero__label reveal">About the initiative</div>
+  <h1 class="hero__title">Responsible AI, made practical through collective expertise.</h1>
+  <p class="hero__desc reveal">TRUST-AI is a distributed, interdisciplinary and collaborative research initiative.</p>
+</section>
+
+<section class="section">
+  <div class="container grid grid--2">
+    <article class="card reveal">
+      <div class="card__number">// Vision</div>
+      <h2 class="card__title" style="font-size: var(--fs-h2)">An international environment for responsible and sustainable AI.</h2>
+      <p class="card__text">TRUST-AI supports research, innovation, education and policy for the responsible and sustainable development, deployment and governance of AI.</p>
+    </article>
+    <article class="card card--dark reveal">
+      <div class="card__number">// Mission</div>
+      <h2 class="card__title" style="font-size: var(--fs-h2)">Connecting complementary perspectives.</h2>
+      <p class="card__text">We connect leading research groups across scientific, technical, regulatory, environmental and societal dimensions of AI, fostering foundational and applied research, education, innovation and policy initiatives with societal impact.</p>
+      <div class="card__ring" aria-hidden="true"></div>
+    </article>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container">
+    <div class="section__header section__header--split reveal">
+      <div><div class="eyebrow">// Across the AI lifecycle</div><h2 class="title">One initiative,<br>complementary capabilities</h2></div>
+      <p class="section__subtitle">Our combined expertise supports AI from design to governance, regulation and societal impact.</p>
+    </div>
+    <div class="grid grid--5">
+      <article class="card reveal"><div class="card__number">01 — Design &amp; development</div><h3 class="card__title">Trustworthy AI engineering</h3></article>
+      <article class="card reveal"><div class="card__number">02 — Build &amp; deploy</div><h3 class="card__title">AI engineering practices</h3></article>
+      <article class="card reveal"><div class="card__number">03 — Govern &amp; oversee</div><h3 class="card__title">Responsible AI governance &amp; ethics</h3></article>
+      <article class="card reveal"><div class="card__number">04 — Impact &amp; inclusion</div><h3 class="card__title">Inclusive AI &amp; society</h3></article>
+      <article class="card reveal"><div class="card__number">05 — Regulate &amp; assure</div><h3 class="card__title">AI regulation, policy &amp; compliance</h3></article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section__header reveal"><div class="eyebrow">// Founding expertise</div><h2 class="title">What each<br>partner brings</h2></div>
+    <div class="table-wrap reveal"><table class="focus-table"><thead><tr><th>Institution</th><th>Core focus</th><th>Contribution</th></tr></thead><tbody><tr><td>University of Bologna</td><td>Trustworthy AI Engineering</td><td>Algorithms, explainability, verification and validation, human oversight, fairness, robustness and compliance by design.</td></tr><tr><td>Fondazione Bruno Kessler</td><td>AI Engineering Practices</td><td>Software engineering, lifecycle management, MLOps, testing frameworks and practical deployment guidance.</td></tr><tr><td>Umeå University</td><td>Responsible AI Governance &amp; Ethics</td><td>Governance frameworks, accountability, human-centred AI, democratic values and institutional capabilities.</td></tr><tr><td>Utrecht University</td><td>Inclusive AI &amp; Society</td><td>Digital inclusion, fairness, diversity, accessibility, human rights and participatory approaches.</td></tr><tr><td>Université de Montréal</td><td>AI Regulation, Policy &amp; Science Diplomacy</td><td>Legal and regulatory frameworks, compliance, risk governance, health AI governance and regulatory innovation.</td></tr></tbody></table></div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <h2 class="footer__brand-name">TRUST-AI<span class="accent">.</span></h2>
+        <p class="footer__brand-desc">Joint Initiative for Trusted AI: Governance, Engineering &amp; Societal Engagement.</p>
+      </div>
+      <div class="footer__col"><div class="footer__col-title">Initiative</div><a href="index.html">Home</a><a href="about.html">About</a><a href="founders.html">Founders</a></div>
+      <div class="footer__col"><div class="footer__col-title">Events</div><a href="events.html">All events</a><a href="events.html#lunch-events">Lunch events</a><a href="events.html#open-debates">Open debates</a><a href="events.html#schools">Schools</a></div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">&copy; 2026 TRUST-AI</span>
+      <button class="footer__back-top">↑ Back to top</button>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
