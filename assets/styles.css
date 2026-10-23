@@ -169,7 +169,7 @@ p + p { margin-top: 1em; }
 /* Same colour order as the T-R-U-S-T pillars (white, green, gold, navy, teal), as a 30% tint over solid white, so earlier cards stay hidden */
 .stack__card:nth-child(2) { top: calc(var(--header-h) + 58px); background: linear-gradient(rgba(119, 170, 122, .3), rgba(119, 170, 122, .3)), var(--base); }
 .stack__card:nth-child(3) { top: calc(var(--header-h) + 88px); background: linear-gradient(rgba(244, 185, 66, .3), rgba(244, 185, 66, .3)), var(--base); }
-.stack__card:nth-child(4) { top: calc(var(--header-h) + 118px); background: linear-gradient(rgba(6, 26, 55, .3), rgba(6, 26, 55, .3)), var(--base); box-shadow: var(--shadow-accent); }
+.stack__card:nth-child(4) { top: calc(var(--header-h) + 118px); background: linear-gradient(rgba(6, 26, 55, .3), rgba(6, 26, 55, .3)), var(--base); }
 .stack__card:nth-child(5) { top: calc(var(--header-h) + 148px); background: linear-gradient(rgba(8, 174, 180, .3), rgba(8, 174, 180, .3)), var(--base); }
 .stack__left { grid-column: span 4; display: flex; justify-content: center; }
 .stack__right { grid-column: span 8; }
