@@ -220,7 +220,7 @@ p + p { margin-top: 1em; }
 .contact > summary::after { content: " ↓"; }
 .contact[open] > summary { background: var(--ink); color: var(--base); }
 .contact[open] > summary::after { content: " ↑"; }
-.contact__panel { margin-top: 1.8rem; padding: clamp(1.2rem, 2vw, 1.8rem); max-width: 640px; background: var(--base); border: var(--border); box-shadow: var(--shadow); }
+.contact__panel { margin-top: 1.8rem; padding: clamp(1.2rem, 2vw, 1.8rem); max-width: 640px; background: var(--page); border: var(--border); box-shadow: var(--shadow); }
 .contact__details { display: grid; gap: .6rem; margin-top: 1.8rem; font-size: var(--fs-data); }
 .contact__details > div { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
 .contact__details dt { min-width: 5.5em; font-size: var(--fs-micro); text-transform: uppercase; letter-spacing: .14em; color: var(--muted); }
