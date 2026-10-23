@@ -306,3 +306,13 @@ p + p { margin-top: 1em; }
   .grid--5 { grid-template-columns: 1fr; }
   .footer__col { grid-column: 1 / -1; }
 }
+
+.hero__tagline {
+  max-width: 620px;
+  margin: 0 0 18px;
+  color: var(--white);
+  font-size: clamp(1.35rem, 2.2vw, 2rem);
+  font-weight: 650;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
