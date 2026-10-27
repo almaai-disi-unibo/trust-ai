@@ -316,3 +316,8 @@ p + p { margin-top: 1em; }
   line-height: 1.2;
   letter-spacing: -0.025em;
 }
+
+.btn--lime {
+  background: var(--lime);
+  color: var(--ink);
+}
