@@ -52,3 +52,70 @@ document.querySelectorAll('[data-copy]').forEach((button) => {
     setTimeout(() => { button.textContent = 'Copy'; button.classList.remove('copied'); }, 1800);
   });
 });
+
+// Load the shared event announcement (one-time installation).
+(() => {
+  const current = document.currentScript;
+  if (!current) return;
+  const script = document.createElement('script');
+  script.src = new URL('header-event.js', current.src).href;
+  document.head.appendChild(script);
+})();
+
+// Shared Events dropdown — edit this list to update every page.
+(() => {
+  const currentScript = document.currentScript;
+  if (!currentScript) return;
+
+  // Works both on GitHub Pages and in event subfolders.
+  const siteRoot = new URL('../', currentScript.src);
+
+  const eventMenuItems = [
+    { label: 'Seminars', path: 'events.html#seminars' },
+    { label: 'Schools', path: 'events.html#schools' },
+    { label: 'Open debates', path: 'events.html#open-debates' },
+    { label: 'Past events', path: 'past-events.html' }
+  ];
+
+  function updateEventsMenu() {
+    document.querySelectorAll('.header__menu').forEach((menu) => {
+      const links = eventMenuItems.map((item) => {
+        const link = document.createElement('a');
+        link.textContent = item.label;
+        link.href = new URL(item.path, siteRoot).href;
+        return link;
+      });
+
+      menu.replaceChildren(...links);
+    });
+
+    // Also update the Events column in the footer.
+    document.querySelectorAll('.footer__col').forEach((column) => {
+      const title = column.querySelector('.footer__col-title');
+
+      if (!title || title.textContent.trim() !== 'Events') return;
+
+      const items = [
+        { label: 'All events', path: 'events.html' },
+        ...eventMenuItems
+      ];
+
+      const links = items.map((item) => {
+        const link = document.createElement('a');
+        link.textContent = item.label;
+        link.href = new URL(item.path, siteRoot).href;
+        return link;
+      });
+
+      column.replaceChildren(title, ...links);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', updateEventsMenu, {
+      once: true
+    });
+  } else {
+    updateEventsMenu();
+  }
+})();
